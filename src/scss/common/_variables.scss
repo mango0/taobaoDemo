@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+// ==============================
+// Variables
+// ==============================
+
+
+//== Colors
+//
+//## Gray and brand colors.
+$gray-base:           #666 !default;                          // hsb(0, 0, 40)
+$gray-dark:           darken($gray-base, 20%) !default;       // #333
+$gray-light:          lighten($gray-base, 20%) !default;      // #999
+$gray-lighter:        lighten($gray-base, 56%) !default;      // #f4f4f4
+$white:               #fff !default;
+
+//** Background color for `<body>`.
+$body-bg:                 $gray-lighter !default;
+//** Global text color on `<body>`.
+$text-color:              $gray-base !default;
+
+$theme-color: #ff5000;
+$theme-color-dark: #f40;
+
+$color01: #fc4200;
+$color02: #9fb838;
+$color03: #d75696;
+$color04: #2e9fdb;
+
+
+
+//== Typography
+//
+//## Font,
+
+$font-family-sans-serif:   "Microsoft Yahei",Helvetica,Helvetica Neue,WenQuanYi Micro Hei,sans-serif;
+$font-family-base:         $font-family-sans-serif !default;
+
+$font-size-base:           12px !default;
+$font-size-larger:         round(($font-size-base * 1.3)) !default; // 16px
+$font-size-large:          round(($font-size-base * 1.16)) !default; // 14px
+
+//** Unite-less `line-hieght` for use in components like buttons
+$line-height-base:          1.666666667 !default; // 20/12

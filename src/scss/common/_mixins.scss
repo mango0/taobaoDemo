@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+// Float
+@mixin float($float: left){
+  float: $float;
+}
+
+// Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
