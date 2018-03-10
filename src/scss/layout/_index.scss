@@ -20,9 +20,6 @@
     color: $theme-color-dark;
   }
 
-  .a-style {
-    color: $theme-color;
-  }
 
   .icon {
     font-size: 14px;
@@ -112,6 +109,7 @@
         width: 252px;
         height: 29px;
         line-height: 29px;
+        padding-left: 8px;
         &:hover {
           background-color: #eee;
         }
@@ -222,5 +220,116 @@
 
 header {
   background-color: $white;
-  margin-top: 11px;
+
+  .wrapper {
+    padding-top: 24px;
+
+    .logo {
+      width: 190px;
+      height: 80px;
+      background: url("../../images/logo.png") no-repeat center;
+      background-size: 142px 58px;
+      span {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+      }
+    }
+
+    .search-wrapper {
+      width: calc(100% - 218px - 302px);
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .search-tab {
+      margin-left: 17px;
+      li {
+        color: $theme-color;
+        cursor: pointer;
+        padding: 1px 6px;
+        margin-right: 4px;
+        @include float(left);
+
+        &:hover {
+          background-color: #FFEEE5;
+        }
+      }
+      .active {
+        border-radius: 6px 6px 0 0;
+        color: $white;
+        background: linear-gradient(to right, #ff9000, #ff5000);
+      }
+    }
+    .search-panel {
+      .search-box {
+        border-radius: 50px 0 0 50px;
+        border: 2px solid $theme-color;
+        border-right: 0;
+        width: 472px;
+        height: 36px;
+
+        &:focus {
+          border: 2px solid $theme-color;
+        }
+
+        >div {
+          padding-left: 10px;
+          height: 100%;
+        }
+
+        .inputbox {
+          border-radius: 50px 0 0 50px;
+          border: none;
+          width: calc(100% - 90px);
+          height: calc(100% - 2px);
+          outline: 0;
+        }
+        .file-wrapper {
+          position: absolute;
+          margin-left: 472px;
+        }
+      }
+
+      .btn {
+        position: absolute;
+        width: 74px;
+        height: 40px;
+        margin-left: 474px;
+        margin-top: -40px;
+        border-radius: 0 50px 50px 0;
+        border: none;
+        background: linear-gradient(to right, #ff9000, #ff5000);
+        color: $white;
+        font-size: 18px;
+      }
+    }
+
+    .search-hot {
+      padding-top: 5px;
+
+      .hot-world {
+        height: 20px;
+        overflow: hidden;
+
+        a {
+          margin-right: 8px;
+        }
+      }
+      .more {
+        position: absolute;
+        margin-left: 10px;
+      }
+    }
+
+    .r-wrapper {
+      background-color: $white;
+      border: 1px solid #eee;
+      text-align: center;
+      padding: 6px;
+
+      img {
+        width: 62px;
+        height: auto;
+      }
+    }
+  }
 }
