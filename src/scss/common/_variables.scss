@@ -33,7 +33,7 @@ $color04: #2e9fdb;
 //
 //## Font,
 
-$font-family-sans-serif:   "Microsoft Yahei",Helvetica,Helvetica Neue,WenQuanYi Micro Hei,sans-serif;
+$font-family-sans-serif:   tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
 $font-family-base:         $font-family-sans-serif !default;
 
 $font-size-base:           12px !default;
@@ -41,4 +41,4 @@ $font-size-larger:         round(($font-size-base * 1.3)) !default; // 16px
 $font-size-large:          round(($font-size-base * 1.16)) !default; // 14px
 
 //** Unite-less `line-hieght` for use in components like buttons
-$line-height-base:          1.666666667 !default; // 20/12
+$line-height-base:          1.5 !default; // 18/12
