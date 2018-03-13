@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link type="image/x-icon" rel="shortcut icon" href="http://oqef2is9h.bkt.clouddn.com/1K.png" />
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
 </head>
 <body>
 <div class="top">
@@ -38,7 +38,7 @@
                 </div>
             </li>
             <li>
-                <a class="a-style" href="">亲，请登录</a>
+                <a class="color-theme" href="">亲，请登录</a>
                 <a href="">免费注册</a>
             </li>
             <li>
@@ -55,13 +55,16 @@
                         </svg>
                     </div>
                     <div class="menu-list">
-                        <a href="">已买到的宝贝</a><a href="">我的足迹</a>
+                        <div class="menu-a">
+                            <a href="">已买到的宝贝</a>
+                            <a href="">我的足迹</a>
+                        </div>
                     </div>
                 </div>
             </li>
             <li>
                 <a href="">
-                    <svg class="icon a-style" aria-hidden="true">
+                    <svg class="icon color-theme" aria-hidden="true">
                         <use xlink:href="#icon-ai66"></use>
                     </svg>
                     购物车
@@ -84,7 +87,10 @@
                         </svg>
                     </div>
                     <div class="menu-list">
-                        <a href="">收藏的宝贝</a><a href="">收藏的店铺</a>
+                        <div class="menu-a">
+                            <a href="">收藏的宝贝</a>
+                            <a href="">收藏的店铺</a>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -122,7 +128,10 @@
                         </svg>
                     </div>
                     <div class="menu-list">
-                        <a href="">消费者客服</a><a href="">卖家客服</a>
+                        <div class="menu-a">
+                            <a href="">消费者客服</a>
+                            <a href="">卖家客服</a>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -130,7 +139,7 @@
                 <div class="menu-wrapper">
                     <div class="menu">
                         <a href="">
-                            <svg class="icon a-style" aria-hidden="true">
+                            <svg class="icon color-theme" aria-hidden="true">
                                 <use xlink:href="#icon-caidan"></use>
                             </svg>
                             网站导航
@@ -243,18 +252,85 @@
         </ul>
     </div>
 </div>
-<div class="wrapper">
-    <header>
-        <div>
-            <img src="images/logo.gif" alt="">
+<header class="header">
+    <div class="wrapper">
+        <div class="clearfix">
+            <h1 class="logo left">
+                <span>淘宝网</span></h1>
+            <div class="r-wrapper right">
+                <a href="">
+                    <p class="color-theme">手机淘宝</p>
+                    <img src="images/erCode.png" alt="二维码">
+                </a>
+            </div>
+            <div class="search-wrapper">
+                <div>
+                    <div class="search-tab">
+                        <ul class="clearfix">
+                            <li class="active">宝贝</li>
+                            <li>天猫</li>
+                            <li>店铺</li>
+                        </ul>
+                    </div>
+                    <div class="search-panel">
+                        <form class="clearfix" action="">
+                            <div class="search-box left">
+                                <div>
+                                    <input type="text" class="inputbox">
+                                </div>
+                                <div class="file-wrapper">
+                                    <input type="file" style="display: none">
+                                </div>
+                            </div>
+                            <button class="btn left" type="button">搜索</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="search-hot">
+                    <div class="hot-world">
+                        <a href="">连衣裙</a>
+                        <a href="">连衣裙</a>
+                        <a class="color-theme" href="">连衣裙</a>
+                        <a href="">连衣裙</a>
+                        <a href="">连衣裙</a>
+                        <a href="">连衣裙</a>
+                        <a href="">连衣裙</a>
+                        <a href="">连衣裙</a>
+                        <a href="">连衣裙</a>
+                        <a href="">连衣裙</a>
+                    </div>
+                    <a href="" class="more">更多</a>
+                </div>
+            </div>
         </div>
-    </header>
-</div>
+
+
+    </div>
+</header>
+<nav class="nav">
+    <div class="wrapper clearfix">
+        <h2 class="left">主题市场</h2>
+        <ul class="nav-hd left">
+            <li><a href="">天猫</a></li>
+            <li><a href="">聚划算</a></li>
+            <li><a href="">天猫超市</a></li>
+        </ul>
+        <ul class="nav-bd left">
+            <li>|</li>
+            <li><a href="">淘抢购</a></li>
+            <li><a href="">电器城</a></li>
+            <li><a href="">司法拍卖</a></li>
+            <li><a href="">中国质造</a></li>
+            <li><a href="">兴农扶贫</a></li>
+        </ul>
+    </div>
+</nav>
 <footer>
     <div class="wrapper">
 
     </div>
 </footer>
-<script src="js/iconfont.js"></script>
+<script src="js/iconfont.min.js"></script>
 </body>
 </html>

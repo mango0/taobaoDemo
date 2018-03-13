@@ -6,6 +6,7 @@ body {
   font-family: $font-family-base;
   line-height: $line-height-base;
   background-color: $body-bg;
+  margin: 0;
 }
 
 ul, p, h1, h2, h3, h4, h5, h6 {
@@ -21,6 +22,9 @@ a {
 }
 a:hover,
 a:active {
+  color: $theme-color;
+}
+.color-theme {
   color: $theme-color;
 }
 
