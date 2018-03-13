@@ -218,7 +218,7 @@
   }
 }
 
-header {
+.header {
   background-color: $white;
 
   .wrapper {
@@ -236,7 +236,7 @@ header {
     }
 
     .search-wrapper {
-      width: calc(100% - 218px - 302px);
+      width: 52%;
       margin: 0 auto;
       overflow: hidden;
     }
@@ -264,7 +264,7 @@ header {
         border-radius: 50px 0 0 50px;
         border: 2px solid $theme-color;
         border-right: 0;
-        width: 472px;
+        padding-left: 10px;
         height: 36px;
 
         &:focus {
@@ -272,7 +272,8 @@ header {
         }
 
         >div {
-          padding-left: 10px;
+
+          width: calc(100% - 74px);
           height: 100%;
         }
 
@@ -290,11 +291,8 @@ header {
       }
 
       .btn {
-        position: absolute;
         width: 74px;
         height: 40px;
-        margin-left: 474px;
-        margin-top: -40px;
         border-radius: 0 50px 50px 0;
         border: none;
         background: linear-gradient(to right, #ff9000, #ff5000);
@@ -307,6 +305,7 @@ header {
       padding-top: 5px;
 
       .hot-world {
+        width: 90%;
         height: 20px;
         overflow: hidden;
 
@@ -331,5 +330,32 @@ header {
         height: auto;
       }
     }
+  }
+}
+
+.nav {
+  background: linear-gradient(to right, #ff9000, #ff5000);
+  color: $white;
+  font-size: 16px;
+  line-height: 30px;
+
+  h2 {
+    width: 190px;
+    text-align: center;
+    font-size: 16px;
+    background-color: $theme-color;
+  }
+  li {
+    float: left;
+    padding: 0 4px;
+
+    a {
+      color: $white;
+      font-weight: 700;
+      padding: 0 5px;
+    }
+  }
+  .nav-bd {
+    font-size: 14px;
   }
 }
