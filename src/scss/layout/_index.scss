@@ -13,6 +13,7 @@
 
   .wrapper {
     position: relative;
+    z-index: 1;
   }
 
   a:hover,
@@ -223,6 +224,8 @@
 
   .wrapper {
     padding-top: 24px;
+    padding-bottom: 10px;
+    position: relative;
 
     .logo {
       width: 190px;
@@ -236,94 +239,117 @@
     }
 
     .search-wrapper {
-      width: 52%;
-      margin: 0 auto;
+      width: 53%;
+      margin-left: 258px;
       overflow: hidden;
-    }
-    .search-tab {
-      margin-left: 17px;
-      li {
-        color: $theme-color;
-        cursor: pointer;
-        padding: 1px 6px;
-        margin-right: 4px;
-        @include float(left);
+      position: relative;
 
-        &:hover {
-          background-color: #FFEEE5;
+      .search-tab {
+        margin-left: 17px;
+        li {
+          color: $theme-color;
+          cursor: pointer;
+          padding: 1px 6px;
+          margin-right: 4px;
+          @include float(left);
+
+          &:hover {
+            background-color: #FFEEE5;
+          }
+        }
+        .active {
+          border-radius: 6px 6px 0 0;
+          color: $white;
+          background: linear-gradient(to right, #ff9000, #ff5000);
         }
       }
-      .active {
-        border-radius: 6px 6px 0 0;
-        color: $white;
-        background: linear-gradient(to right, #ff9000, #ff5000);
-      }
-    }
-    .search-panel {
-      .search-box {
-        border-radius: 50px 0 0 50px;
-        border: 2px solid $theme-color;
-        border-right: 0;
-        padding-left: 10px;
-        height: 36px;
-
-        &:focus {
-          border: 2px solid $theme-color;
-        }
-
-        >div {
-
-          width: calc(100% - 74px);
-          height: 100%;
-        }
-
-        .inputbox {
+      .search-panel {
+        .search-box {
           border-radius: 50px 0 0 50px;
+          border: 2px solid $theme-color;
+          border-right: 0;
+          //padding-left: 10px;
+          width: calc(100% - 80px);
+          height: 36px;
+
+          &:focus {
+            border: 2px solid $theme-color;
+          }
+
+          .input-wrapper {
+            width: calc(100% - 65px);
+            height: 100%;
+            .inputbox {
+              border-radius: 50px 0 0 50px;
+              border: none;
+               padding-left: 10px;
+              width: 100%;
+              height: calc(100% - 2px);
+              outline: 0;
+            }
+          }
+
+          .file-wrapper {
+            position: absolute;
+            right: 90px;
+            top: 28px;
+
+            .icon {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .btn {
+          width: 74px;
+          height: 40px;
+          border-radius: 0 50px 50px 0;
           border: none;
-          width: calc(100% - 90px);
-          height: calc(100% - 2px);
-          outline: 0;
-        }
-        .file-wrapper {
-          position: absolute;
-          margin-left: 472px;
+          background: linear-gradient(to right, #ff9000, #ff5000);
+          color: $white;
+          font-size: 18px;
         }
       }
 
-      .btn {
-        width: 74px;
-        height: 40px;
-        border-radius: 0 50px 50px 0;
-        border: none;
-        background: linear-gradient(to right, #ff9000, #ff5000);
-        color: $white;
-        font-size: 18px;
+      .search-hot {
+        padding-top: 5px;
+
+        .hot-world {
+          width: 90%;
+          height: 20px;
+          overflow: hidden;
+          white-space: nowrap;
+
+          a {
+            margin-right: 8px;
+          }
+        }
+        .more {
+          //position: absolute;
+          //margin-left: 10px;
+        }
       }
     }
-
-    .search-hot {
-      padding-top: 5px;
-
-      .hot-world {
-        width: 90%;
-        height: 20px;
-        overflow: hidden;
-
-        a {
-          margin-right: 8px;
-        }
-      }
-      .more {
-        position: absolute;
-        margin-left: 10px;
-      }
-    }
-
-    .r-wrapper {
+    .ercode {
       background-color: $white;
       border: 1px solid #eee;
       text-align: center;
       padding: 6px;
+      padding-top: 0;
+      position: absolute;
+      right: 110px;
+      top: 15px;
+      :before {
+        position: absolute;
+        left: -14px;
+        top: 0;
+        content: '×';
+        border: 1px solid #eee;
+        width: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: #eee;
+      }
 
       img {
         width: 62px;

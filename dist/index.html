@@ -38,7 +38,7 @@
                 </div>
             </li>
             <li>
-                <a class="color-theme" href="">亲，请登录</a>
+                <a class="color-theme" href="" style="color: #f22e00;">亲，请登录</a>
                 <a href="">免费注册</a>
             </li>
             <li>
@@ -256,13 +256,8 @@
     <div class="wrapper">
         <div class="clearfix">
             <h1 class="logo left">
-                <span>淘宝网</span></h1>
-            <div class="r-wrapper right">
-                <a href="">
-                    <p class="color-theme">手机淘宝</p>
-                    <img src="images/erCode.png" alt="二维码">
-                </a>
-            </div>
+                <span>淘宝网</span>
+            </h1>
             <div class="search-wrapper">
                 <div>
                     <div class="search-tab">
@@ -275,11 +270,17 @@
                     <div class="search-panel">
                         <form class="clearfix" action="">
                             <div class="search-box left">
-                                <div>
+                                <div class="input-wrapper">
                                     <input type="text" class="inputbox">
                                 </div>
                                 <div class="file-wrapper">
-                                    <input type="file" style="display: none">
+                                    <script>
+                                        <input type="file" />
+                                    </script>
+
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-camera"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <button class="btn left" type="button">搜索</button>
@@ -287,25 +288,36 @@
                     </div>
                 </div>
 
-                <div class="search-hot">
+                <div class="search-hot clearfix">
+                    <a href="" class="more right">更多
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-arrows"></use>
+                        </svg>
+                    </a>
                     <div class="hot-world">
                         <a href="">连衣裙</a>
                         <a href="">连衣裙</a>
                         <a class="color-theme" href="">连衣裙</a>
                         <a href="">连衣裙</a>
+                        <a href="">时尚洋气的女宝宝</a>
                         <a href="">连衣裙</a>
                         <a href="">连衣裙</a>
+                        <a href="">妈妈装</a>
                         <a href="">连衣裙</a>
                         <a href="">连衣裙</a>
-                        <a href="">连衣裙</a>
-                        <a href="">连衣裙</a>
+                        <a href="">枯枝</a>
+                        <a href="">四件套</a>
+                        <a href="">笔记本</a>
                     </div>
-                    <a href="" class="more">更多</a>
                 </div>
             </div>
+            <div class="ercode">
+                <a href="">
+                    <p class="color-theme">手机淘宝</p>
+                    <img src="images/erCode.png" alt="二维码">
+                </a>
+            </div>
         </div>
-
-
     </div>
 </header>
 <nav class="nav">
@@ -323,6 +335,12 @@
             <li><a href="">司法拍卖</a></li>
             <li><a href="">中国质造</a></li>
             <li><a href="">兴农扶贫</a></li>
+        </ul>
+        <ul class="nav-bd left">
+            <li>|</li>
+            <li><a href="">飞猪旅行</a></li>
+            <li><a href="">苏宁易购</a></li>
+            <li><a href="">智能生活</a></li>
         </ul>
     </div>
 </nav>
