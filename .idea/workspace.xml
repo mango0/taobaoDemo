@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f19c3ac6-3a77-45fe-b2b6-c426057559f0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/scss/layout/_index.scss" afterPath="$PROJECT_DIR$/src/scss/layout/_index.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +38,14 @@
       </file>
       <file leaf-file-name="_index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/layout/_index.scss">
+<<<<<<< HEAD
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="359" column="20" lean-forward="false" selection-start-line="359" selection-start-column="20" selection-end-line="359" selection-end-column="20" />
+=======
             <state relative-caret-position="172">
               <caret line="334" column="0" lean-forward="true" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+>>>>>>> 5dedf9c2775d6d6542ce82be3aed57ed197fa145
               <folding>
                 <element signature="e#73#3642#0" expanded="false" />
               </folding>
@@ -297,20 +304,29 @@
       <workItem from="1520904641313" duration="1230000" />
 =======
       <workItem from="1520666101209" duration="2670000" />
+<<<<<<< HEAD
+      <workItem from="1520675319551" duration="16372000" />
+=======
       <workItem from="1520675319551" duration="14607000" />
 >>>>>>> 14c3a62de0b6cb67159a83b00958627fbcde54aa
+>>>>>>> 5dedf9c2775d6d6542ce82be3aed57ed197fa145
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+    <option name="totallyTimeSpent" value="33469000" />
+=======
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="15657000" />
 =======
     <option name="totallyTimeSpent" value="31704000" />
 >>>>>>> 14c3a62de0b6cb67159a83b00958627fbcde54aa
+>>>>>>> 5dedf9c2775d6d6542ce82be3aed57ed197fa145
   </component>
   <component name="ToolWindowManager">
     <frame x="652" y="23" width="786" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
 <<<<<<< HEAD
@@ -332,7 +348,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31196582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31196582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25490198" sideWeight="0.5072464" order="2" side_tool="true" content_ui="tabs" />
 >>>>>>> 14c3a62de0b6cb67159a83b00958627fbcde54aa
@@ -851,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/layout/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="334" column="0" lean-forward="true" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+        <state relative-caret-position="398">
+          <caret line="359" column="20" lean-forward="false" selection-start-line="359" selection-start-column="20" selection-end-line="359" selection-end-column="20" />
           <folding>
             <element signature="e#73#3642#0" expanded="false" />
           </folding>
