@@ -1,7 +1,7 @@
 var gulp            = require('gulp'),  // 引入gulp
     // 引入组件
     sass            = require('gulp-sass'),
-    notify          = require('gulp-notify'),               // 显示报错信息和报错后不终止当前gulp任务，在控制台加入文字描述
+    // notify          = require('gulp-notify'),               // 显示报错信息和报错后不终止当前gulp任务，在控制台加入文字描述
     autoprefixer    = require('gulp-autoprefixer'),         // 根据设置浏览器版本自动处理浏览器前缀
     sourcemaps      = require('gulp-sourcemaps'),           // 文件压缩后不利于查看调试，安装后，出错时可直接显示原始代码，而不是转换后代码
     cleanCSS        = require('gulp-clean-css'),            // 压缩CSS文件，减少文件大小，并给引用url添加版本号避免缓存
@@ -49,7 +49,7 @@ gulp.task('sass', ['sass:clean'], function () {  // 执行完sass:clean任务后
         .pipe(rev.manifest()) // 生成一个rev-manifest.json
         .pipe(gulp.dest('./src/rev/css'))  // 将rev-manifest.json 保存到rev目录下
         .pipe(browsersync.reload({ stream:true }))  // 编译后的css将注入到浏览器里实现更新
-        .pipe(notify({title: 'SASS Task', message: 'SASS compiled!', timeout: 2, onLast: true}));
+        // .pipe(notify({title: 'SASS Task', message: 'SASS compiled!', timeout: 2, onLast: true}));
 });
 // build文件是每一次build都会产生的，为防止上一次build的文件和这次的都存在，最好删除上一次的
 gulp.task('sass:clean', function() {
@@ -67,7 +67,7 @@ gulp.task('images', ['images:clean'], function() {
             svgoPlugins: [{removeViewBox: false}]  // 不移除svg的viewbox属性
         }))
         .pipe(gulp.dest('./dist/images'))
-        .pipe(notify({title: 'Images Task', message: 'Images compressed!', timeout: 2, onLast: true}));
+        // .pipe(notify({title: 'Images Task', message: 'Images compressed!', timeout: 2, onLast: true}));
 });
 gulp.task('images:clean', function() {
     return clean([
@@ -94,7 +94,7 @@ gulp.task('js', ['js:clean'], function() {
         .pipe(rev.manifest())
         .pipe(gulp.dest('./src/rev/js'))
         .pipe(browsersync.reload({ stream:true }))
-        .pipe(notify({title: 'JS Task', message: 'JS compiled!', timeout: 2, onLast: true}));
+        // .pipe(notify({title: 'JS Task', message: 'JS compiled!', timeout: 2, onLast: true}));
 });
 gulp.task('js:clean', function() {
     return clean([
@@ -110,7 +110,7 @@ gulp.task('html', ['html:clean'], function() {
         })))
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulp.dest('./dist'))
-        .pipe(notify({title: 'HTML Task', message: 'HTML compiled!', timeout: 2, onLast: true}));
+        // .pipe(notify({title: 'HTML Task', message: 'HTML compiled!', timeout: 2, onLast: true}));
 });
 gulp.task('html:clean', function() {
     return clean([

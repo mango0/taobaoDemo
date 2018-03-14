@@ -8,7 +8,7 @@
 .top {
   line-height: 35px;
   background-color: $body-bg;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid $border-color;
   color: $gray-dark;
 
   .wrapper {
@@ -56,7 +56,7 @@
     &:hover {
       .menu {
         background-color: $white;
-        border: 1px solid #eee;
+        border: 1px solid $border-color;
         border-bottom: 1px solid transparent;
 
         a {
@@ -75,7 +75,7 @@
     .menu-list {
       position: absolute;
       background-color: $white;
-      border: 1px solid #eee;
+      border: 1px solid $border-color;
       display:none;
       top: 36px;
       z-index: -1;
@@ -95,7 +95,7 @@
           display: block;
           &:hover {
             color: $text-color;
-            background-color: #eee;
+            background-color: $border-color;
           }
         }
       }
@@ -112,7 +112,7 @@
         line-height: 29px;
         padding-left: 8px;
         &:hover {
-          background-color: #eee;
+          background-color: $border-color;
         }
       }
     }
@@ -126,7 +126,7 @@
       width: 25%;
       >div {
         padding: 5px;
-        border-right: 1px solid #eee;
+        border-right: 1px solid $border-color;
 
         h4 {
           margin: 5px;
@@ -242,7 +242,6 @@
       width: 53%;
       margin-left: 258px;
       overflow: hidden;
-      position: relative;
 
       .search-tab {
         margin-left: 17px;
@@ -264,35 +263,33 @@
         }
       }
       .search-panel {
+        position: relative;
+        background-color: $white;
+        padding-right: 74px;
+
         .search-box {
           border-radius: 50px 0 0 50px;
           border: 2px solid $theme-color;
           border-right: 0;
-          //padding-left: 10px;
-          width: calc(100% - 80px);
           height: 36px;
 
           &:focus {
             border: 2px solid $theme-color;
           }
 
-          .input-wrapper {
-            width: calc(100% - 65px);
-            height: 100%;
-            .inputbox {
-              border-radius: 50px 0 0 50px;
-              border: none;
-               padding-left: 10px;
-              width: 100%;
-              height: calc(100% - 2px);
-              outline: 0;
-            }
+          .inputbox {
+            border-radius: 50px 0 0 50px;
+            border: none;
+            padding-left: 10px;
+            width: calc(100% - 70px);
+            height: calc(100% - 2px);
+            outline: 0;
           }
 
           .file-wrapper {
             position: absolute;
             right: 90px;
-            top: 28px;
+            top: 8px;
 
             .icon {
               font-size: 24px;
@@ -305,9 +302,13 @@
           height: 40px;
           border-radius: 0 50px 50px 0;
           border: none;
+          background-color: $theme-color;
           background: linear-gradient(to right, #ff9000, #ff5000);
           color: $white;
           font-size: 18px;
+          position: absolute;
+          right: 0;
+          top: 0;
         }
       }
 
@@ -332,7 +333,7 @@
     }
     .ercode {
       background-color: $white;
-      border: 1px solid #eee;
+      border: 1px solid $border-color;
       text-align: center;
       padding: 6px;
       padding-top: 0;
@@ -344,11 +345,11 @@
         left: -14px;
         top: 0;
         content: '×';
-        border: 1px solid #eee;
+        border: 1px solid $border-color;
         width: 12px;
         line-height: 12px;
         text-align: center;
-        color: #eee;
+        color: $border-color;
       }
 
       img {
@@ -359,7 +360,7 @@
   }
 }
 
-.nav {
+.nav-block {
   background: linear-gradient(to right, #ff9000, #ff5000);
   color: $white;
   font-size: 16px;
@@ -383,5 +384,66 @@
   }
   .nav-bd {
     font-size: 14px;
+  }
+}
+
+.screen-outer {
+  overflow: hidden;
+  .main {
+    margin-right: -290px;
+
+    .nav {
+      width: 190px;
+      position: relative;
+      background-color: $white;
+      .nav-list {
+        border: 1px solid $theme-color;
+        border-top: none;
+        padding-top: 5px;
+        padding-bottom: 3px;
+        li {
+          font-size: 14px;
+          height: 32px;
+          overflow: hidden;
+          padding-left: 25px;
+          padding-right: 19px;
+          position: relative;
+          &:hover {
+            color: $theme-color;
+            background-color: #ffe4dc;
+            a {
+               color: $theme-color;
+             }
+          }
+          a {
+            line-height: 32px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          .icon {
+            position: absolute;
+            right: 8px;
+            top: 10px;
+            font-size: 12px;
+            color: #bbb;
+          }
+        }
+      }
+      .more-wrapper {
+        width: 692px;
+        position: absolute;
+        left: 188px;
+        top: 0;
+        .more-con {
+          border: 2px solid #f94a14;
+          box-shadow: 2px 2px 0 #dcdadb;
+        }
+      }
+    }
+  }
+  .sidebar {
+    float: right;
+    width: 290px;
   }
 }
