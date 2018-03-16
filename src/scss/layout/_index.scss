@@ -393,6 +393,15 @@
   .main {
     margin-right: -290px;
 
+    .nav,
+    .center-wrapper,
+    .right-wrapper,
+    .troll-wrapper,
+    .side-wrapper {
+      display: table-cell;
+      vertical-align: top;
+    }
+
     .nav {
       width: 190px;
       position: relative;
@@ -470,7 +479,7 @@
                 }
 
                 p {
-                  height: 22px;
+                  height: 20px;
                   overflow: hidden;
                 }
               }
@@ -510,6 +519,25 @@
         }
       }
     }
+    .center-wrapper {
+      .side-wrapper {
+        width: 160px;
+        >div {
+          margin-right: 10px;
+          margin-top: 10px;
+        }
+
+        .side-02 {
+          h5 {
+            font-size: 12px;
+            font-weight: 400;
+            color: #a1a1a1;
+            padding-top: 6px;
+          }
+        }
+      }
+    }
+
   }
   .sidebar {
     float: right;

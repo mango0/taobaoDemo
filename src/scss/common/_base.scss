@@ -32,6 +32,7 @@ a:active {
 }
 
 img {
+  display: inline-block;   // fixed Firebox
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
